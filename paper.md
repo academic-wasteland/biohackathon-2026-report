@@ -1,7 +1,7 @@
 ---
 title: 'Academic Wasteland: a federated research commons for discovery, delegation and local control'
 title_short: 'Academic Wasteland: a federated research commons'
-authors: []
+authors: [Robert Hoehndorf, Michel Dumontier, Alexander Kanitz, Chang Sun, Daniel Puthawala, Priscilla Joanne, Dawn Chen]
 affiliations: []
 authors_short: 'Draft: author list open'
 date: '18 September 2026'
