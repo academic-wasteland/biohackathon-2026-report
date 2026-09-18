@@ -13,7 +13,7 @@ Prepared 18 September 2026 from the supplied [publication slides](https://docs.g
 - `literature-search.md`: search scope, consulted primary sources and comparison rationale.
 - `build-preview.sh`: repeatable draft build. Requires Pandoc, Python 3, LuaLaTeX, Biber and the template's LaTeX packages.
 
-The expanded draft is 13 pages including references; the demonstration companion is five pages. The venue suggests up to ten pages, so final editorial tightening may be appropriate after author review. The abstract is 240 words and all 37 bibliography entries are cited.
+Pagination needs a rebuild: the draft was 13 pages including references before the independent-implementation sections were added, and the demonstration companion is five pages. The venue suggests up to ten pages, so final editorial tightening may be appropriate after author review. The abstract is 254 words and all 41 bibliography entries are cited.
 
 ## Authorship remains open
 
