@@ -9,7 +9,7 @@ colorlinks: true
 
 # Reading the demonstrations
 
-These notes accompany the submission and distinguish recorded evidence from new execution. Results and screenshots are taken from the project's captured demonstrations; preparing this report did not launch another compute job. The main paper describes the scientific and authorisation methods.
+These notes accompany the submission and distinguish recorded evidence from new execution. Results and screenshots are taken from the project's captured demonstrations; The original cohort, visitor and variant proofs were reused. The Sysifoss case was additionally rehearsed on 18 September, including one small public-data TES job. The main paper describes the scientific and authorisation methods.
 
 The [observatory](https://leechuck.de/academic-wasteland/) shows relay activity and catalogue descriptions. The [recorded replay](https://leechuck.de/academic-wasteland/replay.html) presents captured runs with inspectable evidence and aggregate downloads. Its signatures and decisions describe historical runs; replay does not renew expired permissions or perform a new analysis.
 
@@ -80,6 +80,25 @@ The full variant demonstration additionally filters a local synthetic six-call V
 ```
 
 [Captured full-workflow proof](https://github.com/academic-wasteland/pangenome-town/blob/953b21cc52d43cd0cce9daac53e89cdd81305986/docs/private-variant-proof.md). The web phenotype case and full variant script have different endpoints and outputs; the web query alone does not perform all variant steps.
+
+# Demonstration 4: Sysifoss executes a task and returns an RO-Crate
+
+**Question.** Can a compute broker translate a research task into a standard execution request and preserve the resulting contribution in an inspectable carrier?
+
+Open the [Sysifoss replay](https://leechuck.de/academic-wasteland/sysifoss/) from the main website. Select the accepted task, unknown task or mismatched contract, then choose **Play recording**. Inspect the admission stage, TES dispatch and returned JSON-LD. Reset affects only this browser. The page offers the original crate ZIP, the recorded state transitions and the captured TES response including stdout.
+
+**Captured result.** On 18 September 2026, the supplied stage completed real CSC TES task `task-3468d08c` with exit code zero. It used `ubuntu:latest` to read three lines from the public GA4GH TES README. The negative scenarios returned `unknown` and `invalid` and stopped before dispatch. The stage injects a scripted reasoner; manifest/schema validation, TES execution and carrier construction use the actual Python implementations. The crate preserves the contribution message and execution-action metadata with output/telemetry references. Its current telemetry digest is a placeholder, and the broker does not collect the referenced output or log files into this crate. The separate captured TES response provides the execution evidence for this rehearsal.
+
+![Sysifoss public replay after the captured TES completion, showing the execution stages and contribution metadata.](figures/sysifoss-demo.png){width=95%}
+
+**Dependencies and reproduction.** [Sysifoss](https://github.com/academic-wasteland/sysifoss) uses the RO-Crate builder from [Research Commons PR 3](https://github.com/academic-wasteland/research-commons/pull/3), pinned in the manuscript bibliography. The [public-replay guide](https://github.com/academic-wasteland/sysifoss/blob/main/docs/demos/public-replay.md) describes the source snapshots, captured files and live-stage prerequisites. From Sysifoss, export the existing recording without launching a job:
+
+```sh
+python3 docs/demos/export_public_demo.py --output /tmp/sysifoss-public
+python3 -m http.server 8399 --bind 127.0.0.1 --directory /tmp/sysifoss-public
+```
+
+Open `http://127.0.0.1:8399/`. Re-running the original accepted stage case submits a real TES job. The scripted reasoner tests admission control flow; independent reasoning, external profile validation and complete multi-town provenance require further evaluation. The current image tag and input URL are mutable, so the capture is a record of the observed run rather than a fully pinned environment.
 
 # Inspect issuer choice, delegation and revocation
 

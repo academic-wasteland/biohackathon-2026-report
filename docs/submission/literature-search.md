@@ -51,3 +51,12 @@ The follow-up search used the BioHackrXiv archive, DOI records and report PDFs t
 The two journal author lists were retrieved from Crossref. BioHackrXiv author lists and dates were checked against the full PDFs. Event dates and publication years are distinguished in the manuscript.
 
 Implementation documentation and captured browser proofs were also read at pangenome-town `585b32fc45d741e84290c6d2cb84b659395ecb0c` and starter-pack `eeb5f712182ab630db29798dda990290657ef529`. These add FAIRhaven's persisted bounded auditor, Camelot's reviewed issuance interface, cohort and visitor demonstrations, and separate static replay/live presentation paths. Earlier pinned citations remain where they identify the original variant proof or protocol documentation. The manuscript does not treat these snapshots as one tested release. Supplementary screenshots come from the dated source proofs and were not regenerated during writing.
+
+
+## Sysifoss and implemented standards (18 September update)
+
+All nine Academic Wasteland repositories were cloned and reviewed at their default branches. Sysifoss adds an implemented TES mapper, dispatch/polling broker and RO-Crate completion carrier. Its dependency is Research Commons' `ro_crates` branch (open PR 3 at review time); the default Research Commons branch lacks `ROCrateBuilder`. The report now separates implemented TES/carrier support from future WES, Passport, complete artifact capture and multi-town packaging.
+
+The broker code, mapper, stage, CLI demos and tests were read alongside the carrier builder, recovery code, schema, SHACL constraints and tests. The source distinguishes the scripted demo reasoner and mocked CLI dispatch from the web stage's real TES call. The 18 September rehearsal completed one public-data task and captured two pre-dispatch refusals. Four local broker tests and 65 carrier tests passed. The live case was exercised through the stage, rather than repeated through the separate live test.
+
+The [official Process Run Crate specification](https://www.researchobject.org/workflow-run-crate/profiles/process_run_crate/) clarifies the distinction between software execution actions and full workflow provenance. The reviewed code declares RO-Crate v1.1, Process Run v0.1 and its own carrier profile. The manuscript reports those declared versions and project checks; it does not infer current-version or externally certified conformance. The code's telemetry digest is a placeholder and outputs/logs are references. These are explicit implementation limits in the main text.

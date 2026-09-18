@@ -13,7 +13,7 @@ Prepared 18 September 2026 from the supplied [publication slides](https://docs.g
 - `literature-search.md`: search scope, consulted primary sources and comparison rationale.
 - `build-preview.sh`: repeatable draft build. Requires Pandoc, Python 3, LuaLaTeX, Biber and the template's LaTeX packages.
 
-The expanded draft is 12 pages including references; the demonstration companion is four pages. The venue suggests up to ten pages, so final editorial tightening may be appropriate after author review. The abstract is 229 words and all 33 bibliography entries are cited.
+The expanded draft is 13 pages including references; the demonstration companion is five pages. The venue suggests up to ten pages, so final editorial tightening may be appropriate after author review. The abstract is 240 words and all 37 bibliography entries are cited.
 
 ## Authorship remains open
 
@@ -31,11 +31,11 @@ The manuscript source and review artifacts are maintained in the dedicated [BioH
 
 ## Evidence and scope
 
-The report uses the existing phenotype/variant proof dated 17 September, cohort and visitor rehearsals dated 16 September, and documented certification scenarios. It does not claim a fresh deployment test during manuscript preparation. Software changes already present in neighbouring working trees were left untouched. References pin committed documentation, independently of those uncommitted changes.
+The report uses the existing phenotype/variant proof dated 17 September, cohort and visitor rehearsals dated 16 September, and documented certification scenarios. An additional Sysifoss rehearsal on 18 September completed one public-data CSC TES job and two pre-dispatch rejection cases; its recording and crate are published with the Sysifoss demo. Software changes already present in neighbouring working trees were left untouched. References pin committed documentation, independently of those uncommitted changes.
 
-Numerical results were checked against `private-variant-demo.md` and `private-variant-proof.md`: 1,529 mouse profiles, FBN1 gene rank 3, four of six calls retained, REVEL-only rank 2 and combined rank 1. The combined scores were recomputed from the documented formula. The cohort rehearsal reports 510 shared biallelic sites; the visitor proof records two completed DDBJ jobs and three aggregate counts. Certification results come from the documented scenario suite. Local stage workers, remote Slurm execution, live relay queries and historical browser replay are distinguished in the paper and supplement. Broad historical test totals are omitted because they do not describe one frozen cross-repository release.
+Numerical results were checked against `private-variant-demo.md` and `private-variant-proof.md`: 1,529 mouse profiles, FBN1 gene rank 3, four of six calls retained, REVEL-only rank 2 and combined rank 1. The combined scores were recomputed from the documented formula. The cohort rehearsal reports 510 shared biallelic sites; the visitor proof records two completed DDBJ jobs and three aggregate counts. Certification results come from the documented scenario suite. Sysifoss used a scripted reasoner with real TES execution; four local broker tests and 65 carrier tests passed. Local stage workers, remote Slurm execution, live relay queries and historical browser replay are distinguished in the paper and supplement. Broad historical test totals are omitted because they do not describe one frozen cross-repository release.
 
-The implemented deployment uses a shared relay and co-hosted demonstration towns. Strict certification tests and the public phenotype workflow are described separately. Independent implementation evaluation, stronger host isolation and complete RO-Crate packaging are future work.
+The implemented deployment uses a shared relay and co-hosted demonstration towns. Strict certification tests and the public phenotype workflow are described separately. Sysifoss implements TES dispatch and RO-Crate contribution packaging using the reviewed Research Commons integration branch. Independent implementation evaluation, stronger host isolation, complete output/log collection and multi-town packaging remain future work. `repository-snapshots.json` records all nine organisation repositories reviewed and the additional RO-Crate branch.
 
 ## Build and final submission
 

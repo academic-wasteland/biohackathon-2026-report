@@ -1,0 +1,56 @@
+{
+  "reviewed": "2026-09-18",
+  "repositories": [
+    {
+      "repository": "biohackathon-2026-report",
+      "commit": "09813102adbe13cfdcb7b74cd458d700e264c62c",
+      "url": "https://github.com/academic-wasteland/biohackathon-2026-report/tree/09813102adbe13cfdcb7b74cd458d700e264c62c"
+    },
+    {
+      "repository": "camelot",
+      "commit": "f52e43d684c7b36f11d6a4932d3e0c8e712d458a",
+      "url": "https://github.com/academic-wasteland/camelot/tree/f52e43d684c7b36f11d6a4932d3e0c8e712d458a"
+    },
+    {
+      "repository": "fairhaven",
+      "commit": "15327391a434341be346cb89288f54d9b656d741",
+      "url": "https://github.com/academic-wasteland/fairhaven/tree/15327391a434341be346cb89288f54d9b656d741"
+    },
+    {
+      "repository": "pangenome-town",
+      "commit": "2e70b657f28efd201a295da0c66b5bae4f197e39",
+      "url": "https://github.com/academic-wasteland/pangenome-town/tree/2e70b657f28efd201a295da0c66b5bae4f197e39"
+    },
+    {
+      "repository": "research-commons",
+      "commit": "682190f15f3bccc6e2cce913de2ae780bbdf77dc",
+      "url": "https://github.com/academic-wasteland/research-commons/tree/682190f15f3bccc6e2cce913de2ae780bbdf77dc"
+    },
+    {
+      "repository": "sysifoss",
+      "commit": "bd2fd090d815fc9f7ca675178a7b4c50bf601860",
+      "url": "https://github.com/academic-wasteland/sysifoss/tree/bd2fd090d815fc9f7ca675178a7b4c50bf601860"
+    },
+    {
+      "repository": "ubar",
+      "commit": "3c4cad1d69a4ebdac66e7ca94f242b91b2a02e89",
+      "url": "https://github.com/academic-wasteland/ubar/tree/3c4cad1d69a4ebdac66e7ca94f242b91b2a02e89"
+    },
+    {
+      "repository": "wasteland-starter-pack",
+      "commit": "540e21c8ac29c10e706ca3dc1c994f5a4cac9a25",
+      "url": "https://github.com/academic-wasteland/wasteland-starter-pack/tree/540e21c8ac29c10e706ca3dc1c994f5a4cac9a25"
+    },
+    {
+      "repository": "yamatai",
+      "commit": "abf0cfc0a596dc8f10997ef141263a1534dc5f06",
+      "url": "https://github.com/academic-wasteland/yamatai/tree/abf0cfc0a596dc8f10997ef141263a1534dc5f06"
+    }
+  ],
+  "additional_branch": {
+    "repository": "research-commons",
+    "branch": "ro_crates",
+    "commit": "c224e65fd14c816bdf57df2256ce317bd295dcd3",
+    "pull_request": "https://github.com/academic-wasteland/research-commons/pull/3"
+  }
+}

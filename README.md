@@ -13,7 +13,7 @@ Working BioHackrXiv submission from DBCLS BioHackathon 2026, Matsuyama, Japan, 1
 - [Literature search and positioning](docs/submission/literature-search.md)
 - [Submission preparation notes](docs/submission/README.md)
 
-The report explains the motivation for a research commons, compares related work, describes FAIRhaven and Camelot, and documents cohort analysis, remote compute, phenotype-guided variant analysis and credential tests. The demonstration guide includes captured screenshots, replay links and reproduction commands.
+The report explains the motivation for a research commons, compares related work, describes FAIRhaven and Camelot, describes Sysifoss and its implemented TES/RO-Crate connection, and documents cohort analysis, remote compute, phenotype-guided variant analysis and credential tests. The demonstration guide includes captured screenshots, replay links and reproduction commands.
 
 ## Build
 
@@ -23,12 +23,13 @@ bash docs/submission/build-preview.sh
 
 Requires Git, Pandoc, Python 3, LuaLaTeX, Biber and the BioHackrXiv template's LaTeX packages. The script pins the template revision and builds the manuscript and demonstration PDFs. It preserves empty author metadata by displaying an explicit draft placeholder.
 
-The report is 12 pages including references, with a four-page demonstration companion. The venue suggests up to ten pages. Authorship, licence, funding and the event identifier remain to be finalised before deposit; see the preparation notes.
+The report is 13 pages including references, with a five-page demonstration companion. The venue suggests up to ten pages. Authorship, licence, funding and the event identifier remain to be finalised before deposit; see the preparation notes.
 
 ## Software and evidence
 
 - [Research Commons](https://github.com/academic-wasteland/research-commons)
 - [Pangenome Town](https://github.com/academic-wasteland/pangenome-town)
+- [Sysifoss](https://github.com/academic-wasteland/sysifoss)
 - [Wasteland Starter Pack](https://github.com/academic-wasteland/wasteland-starter-pack)
 
 The bibliography pins implementation documentation and captured evidence. Demonstrations are examples of working integrations, not a comparative performance benchmark. Screenshots are reproduced from the cited project records. The manuscript licence remains to be agreed by the authors; upstream software, data, model and evidence rights are separate.
