@@ -2,7 +2,7 @@
 title: 'Academic Wasteland: a federated research commons for discovery, delegation and local control'
 title_short: 'Academic Wasteland: a federated research commons'
 authors: [Robert Hoehndorf, Michel Dumontier, Alexander Kanitz, Chang Sun, Daniel Puthawala, Priscilla Joanne, Dawn Chen, Angganararas Lungidningtyas, Jiandong Chen, Nuria Fabrega]
-affiliations: [King Abdullah University of Science and Technology, University of Maastricht, , University of Maastricht, Nationwide Children's Hospital, , , , ,]
+affiliations: [King Abdullah University of Science and Technology, University of Maastricht, University of Maastricht, Nationwide Children's Hospital]
 authors_short: 'Hoehndorf et al.'
 date: '18 September 2026'
 tags:
